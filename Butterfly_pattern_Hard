@@ -1,0 +1,59 @@
+import java.util.*;
+public class inverted_pattern_1234_123_12_1{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        //outer loop
+        for(int i=1;i<=n;i++){
+            //inner loop1
+            for(int j=1;j<=i;j++){
+                System.out.print("#");
+                
+            }//inner2
+            int spaces=2*(n-i);
+            for(int j=1;j<=spaces;j++){
+                System.out.print(" ");
+            }//inner 3
+            for(int j=1;j<=i;j++){
+                System.out.print("#");
+            }System.out.println();
+       
+        }/*
+        //from here reverse :logic 1 ie video
+        for(int i=n;i>=1;i--){
+            for(int j=i;j>=1;j--){
+                System.out.print("#");
+            }
+            int spaces=2*(n -i); //the spaces are calclulated by making a drawing of pattern then see it,(n=5)-(i=5)*2=2*0=O is 1ST CASE
+            for(int j=1;j<=spaces;j++){
+                System.out.print(" ");
+            }
+            for(int j=i;j>=1;j--){
+            System.out.print("#");
+                
+            }
+            System.out.println();
+        }*/
+        
+        //one more logic try: mine :in this i am trying not to reverse the i ie i will start from1 ,not from n
+        
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i+1;j++){
+                System.out.print("#");
+            }
+            int spaces=2*(i-1);
+            for(int j=1;j<=spaces;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=n+1-i;j++){
+            System.out.print("#");
+                
+            }
+            System.out.println();
+        }
+    
+        
+    }
+    
+
+}
