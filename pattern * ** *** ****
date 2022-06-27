@@ -24,3 +24,5 @@ public class inverted_pattern_1234_123_12_1{
         }    
   }
 }
+
+//isme main cheez ye h ki kisi pattern ko replicate karna 180 degree m to bss outer loop ko reverse kardo ie for(i=1;i<=n;i++) ko for(i=n;i>=1;i--) kar do
