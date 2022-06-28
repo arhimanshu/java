@@ -1,0 +1,16 @@
+//radius as input and throw circumference
+import java.util.*;
+public class Functions{
+    public static int Circumference(int r){
+        
+        return (2*22*r)/7;
+        
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int r=sc.nextInt();
+        
+        System.out.println(Circumference(r));
+    }
+        
+}
