@@ -13,7 +13,8 @@ public class tnfu{
         names[i]=sc.next();
         
         //output
-        for(int i=0;i<size;i++)
+        for(int i=0;i<size;i++)   
+        //    for(int i=0; i<names.length; i++)
         System.out.println("name at position " +(i+1) +"is" +" "+ names[i]);
         
         
