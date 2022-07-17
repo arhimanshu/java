@@ -1,0 +1,38 @@
+//2d array input and traverse(ie searching the value )
+import java.util.*;
+public class matrix{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int row=sc.nextInt();
+        int col=sc.nextInt();
+        int arry[][]=new int[row][col];
+        //input values
+        for(int i=0;i<row;i++){ 
+            for(int j=0;j<col;j++){
+                arry[i][j]=sc.nextInt();
+            }
+            System.out.println();
+        }
+        //print values
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                System.out.print(arry[i][j]+" ");
+            }System.out.println(" ");
+        }
+        //input value u want to search
+        System.out.println("input value u want to search");
+        int x=sc.nextInt();
+        
+        //traversing values
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                if (arry[i][j]==x){
+                    System.out.print("the position of the number " + x + " is at the location " + i +" "+j +" ");
+                }
+                
+            }
+        }
+        
+        
+    }
+}
